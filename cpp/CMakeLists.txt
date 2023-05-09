@@ -10,6 +10,7 @@ set(TESTS
   test_graph
   test_sort
   test_dijkstra
+  test_md5
 )
 
 add_subdirectory(${PROJECT_SOURCE_DIR}/src)
