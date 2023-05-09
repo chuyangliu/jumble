@@ -1,5 +1,5 @@
-#ifndef JUMBLE_SORT_INCLUDED
-#define JUMBLE_SORT_INCLUDED
+#ifndef JUMBLE_SORT_HPP_INCLUDED
+#define JUMBLE_SORT_HPP_INCLUDED
 
 #include "jumble/binary_heap.hpp"
 #include <cstddef>

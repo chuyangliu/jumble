@@ -1,5 +1,5 @@
-#ifndef JUMBLE_HASH_TABLE_INCLUDED
-#define JUMBLE_HASH_TABLE_INCLUDED
+#ifndef JUMBLE_HASH_TABLE_HPP_INCLUDED
+#define JUMBLE_HASH_TABLE_HPP_INCLUDED
 
 #include "jumble/util/common.hpp"
 #include "jumble/doubly_linked_list.hpp"

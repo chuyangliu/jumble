@@ -1,5 +1,5 @@
-#ifndef JUMBLE_AVL_TREE_INCLUDED
-#define JUMBLE_AVL_TREE_INCLUDED
+#ifndef JUMBLE_AVL_TREE_HPP_INCLUDED
+#define JUMBLE_AVL_TREE_HPP_INCLUDED
 
 #include "jumble/util/common.hpp"
 #include <functional>

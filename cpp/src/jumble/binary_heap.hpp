@@ -1,5 +1,5 @@
-#ifndef JUMBLE_BINARY_HEAP_INCLUDED
-#define JUMBLE_BINARY_HEAP_INCLUDED
+#ifndef JUMBLE_BINARY_HEAP_HPP_INCLUDED
+#define JUMBLE_BINARY_HEAP_HPP_INCLUDED
 
 #include "jumble/util/common.hpp"
 #include <vector>

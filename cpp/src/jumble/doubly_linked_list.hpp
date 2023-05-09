@@ -1,5 +1,5 @@
-#ifndef JUMBLE_DOUBLY_LINKED_LIST_INCLUDED
-#define JUMBLE_DOUBLY_LINKED_LIST_INCLUDED
+#ifndef JUMBLE_DOUBLY_LINKED_LIST_HPP_INCLUDED
+#define JUMBLE_DOUBLY_LINKED_LIST_HPP_INCLUDED
 
 #include "jumble/util/common.hpp"
 #include <functional>

@@ -1,5 +1,5 @@
-#ifndef JUMBLE_UTIL_RANDOM_INCLUDED
-#define JUMBLE_UTIL_RANDOM_INCLUDED
+#ifndef JUMBLE_UTIL_RANDOM_HPP_INCLUDED
+#define JUMBLE_UTIL_RANDOM_HPP_INCLUDED
 
 #include "jumble/util/common.hpp"
 #include <random>

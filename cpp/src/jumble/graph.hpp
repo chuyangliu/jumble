@@ -1,5 +1,5 @@
-#ifndef JUMBLE_GRAPH_INCLUDED
-#define JUMBLE_GRAPH_INCLUDED
+#ifndef JUMBLE_GRAPH_HPP_INCLUDED
+#define JUMBLE_GRAPH_HPP_INCLUDED
 
 #include "jumble/util/common.hpp"
 #include <vector>
