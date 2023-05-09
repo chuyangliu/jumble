@@ -8,6 +8,7 @@ set(TESTS
   test_hash_table
   test_avl_tree
   test_graph
+  test_sort
 )
 
 add_subdirectory(${PROJECT_SOURCE_DIR}/src)
