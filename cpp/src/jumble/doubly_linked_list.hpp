@@ -1,8 +1,11 @@
-#ifndef DOUBLY_LINKED_LIST_HPP_INCLUDED
-#define DOUBLY_LINKED_LIST_HPP_INCLUDED
+#ifndef JUMBLE_DOUBLY_LINKED_LIST_INCLUDED
+#define JUMBLE_DOUBLY_LINKED_LIST_INCLUDED
 
+#include "jumble/util/common.hpp"
 #include <functional>
 #include <cstddef>
+
+JUMBLE_NAMESPACE_BEGIN
 
 /*
 Doubly linked list data structure.
@@ -348,5 +351,7 @@ private:
     Node *head;
     Node *tail;
 };
+
+JUMBLE_NAMESPACE_END
 
 #endif

@@ -1,24 +1,24 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(libmisccpp LANGUAGES CXX)
+project(jumblecpp CXX)
 
 set(TESTS
-  doubly_linked_list_test
+  test_doubly_linked_list
+  test_binary_heap
 )
-
-include(CTest)
 
 include_directories(
   ${PROJECT_SOURCE_DIR}/src
-  ${PROJECT_SOURCE_DIR}/thirdparty
 )
 
-file(GLOB_RECURSE SOURCES ${PROJECT_SOURCE_DIR}/src/*.cpp)
+# file(GLOB_RECURSE LIBMISC_SRCS ${PROJECT_SOURCE_DIR}/src/*.cpp)
+# add_library(misccpp ${LIBMISC_SRCS})
 
-add_library(Catch2 ${PROJECT_SOURCE_DIR}/thirdparty/catch2/catch_amalgamated.cpp)
+include(CTest)
+add_library(catch2 ${PROJECT_SOURCE_DIR}/src/catch2/catch_amalgamated.cpp)
 
 foreach (test ${TESTS})
-  add_executable(${test} ${PROJECT_SOURCE_DIR}/test/${test}.cpp ${SOURCES})
-  target_link_libraries(${test} Catch2)
+  add_executable(${test} ${PROJECT_SOURCE_DIR}/test/${test}.cpp)
+  target_link_libraries(${test} catch2)
   add_test(${test} ${PROJECT_BINARY_DIR}/${test})
 endforeach ()

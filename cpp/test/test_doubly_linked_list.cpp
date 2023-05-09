@@ -1,12 +1,12 @@
 #include "catch2/catch_amalgamated.hpp"
-#include "doubly_linked_list.hpp"
+#include "jumble/doubly_linked_list.hpp"
 #include <string>
 #include <utility>
 
-typedef DoublyLinkedList<int>::SizeType SizeType;
+typedef jumble::DoublyLinkedList<int>::SizeType SizeType;
 
 template<typename T>
-std::string getListContent(const DoublyLinkedList<T>& list) {
+std::string getListContent(const jumble::DoublyLinkedList<T>& list) {
     std::string str;
     list.traverse([&](const SizeType pos, const T& val) {
         str += std::to_string(val);
@@ -15,7 +15,7 @@ std::string getListContent(const DoublyLinkedList<T>& list) {
 }
 
 TEST_CASE("Basic") {
-    DoublyLinkedList<int> list;
+    jumble::DoublyLinkedList<int> list;
 
     list.removeFront();
     list.removeBack();
@@ -58,11 +58,11 @@ TEST_CASE("Basic") {
 }
 
 TEST_CASE("Move") {
-    DoublyLinkedList<int> list1;
+    jumble::DoublyLinkedList<int> list1;
     list1.insertBack(1);
     list1.insertBack(2);
 
-    DoublyLinkedList<int> list2(std::move(list1));
+    jumble::DoublyLinkedList<int> list2(std::move(list1));
     REQUIRE(list1.isEmpty());
     REQUIRE(getListContent(list2) == "12");
 
@@ -72,7 +72,7 @@ TEST_CASE("Move") {
 }
 
 TEST_CASE("Insert") {
-    DoublyLinkedList<int> list;
+    jumble::DoublyLinkedList<int> list;
 
     for (int i = 1; i < 10; ++i) {
         list.insertFront(i);
@@ -96,7 +96,7 @@ TEST_CASE("Insert") {
 }
 
 TEST_CASE("Remove") {
-    DoublyLinkedList<int> list;
+    jumble::DoublyLinkedList<int> list;
 
     for (int i = 1; i < 6; ++i) {
         list.insertBack(i);
@@ -142,7 +142,7 @@ TEST_CASE("Remove") {
 }
 
 TEST_CASE("Find") {
-    DoublyLinkedList<int> list;
+    jumble::DoublyLinkedList<int> list;
     for (int i = 0; i < 3; ++i) {
         list.insertBack(i);
     }
@@ -161,7 +161,7 @@ TEST_CASE("Find") {
 }
 
 TEST_CASE("Sort") {
-    DoublyLinkedList<int> list;
+    jumble::DoublyLinkedList<int> list;
 
     list.sort();
     REQUIRE(getListContent(list) == "");
