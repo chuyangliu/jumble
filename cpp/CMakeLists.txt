@@ -1,10 +1,13 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(jumblecpp CXX)
+project(jumble CXX)
 
 set(TESTS
   test_doubly_linked_list
   test_binary_heap
+  test_hash_table
+  test_avl_tree
+  test_graph
 )
 
 add_subdirectory(${PROJECT_SOURCE_DIR}/src)
