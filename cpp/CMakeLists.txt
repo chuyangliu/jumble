@@ -7,15 +7,15 @@ set(TESTS
   test_binary_heap
 )
 
+add_subdirectory(${PROJECT_SOURCE_DIR}/src)
+
 include_directories(
   ${PROJECT_SOURCE_DIR}/src
+  ${PROJECT_SOURCE_DIR}/thirdparty
 )
 
-# file(GLOB_RECURSE LIBMISC_SRCS ${PROJECT_SOURCE_DIR}/src/*.cpp)
-# add_library(misccpp ${LIBMISC_SRCS})
-
 include(CTest)
-add_library(catch2 ${PROJECT_SOURCE_DIR}/src/catch2/catch_amalgamated.cpp)
+add_library(catch2 ${PROJECT_SOURCE_DIR}/thirdparty/catch2/catch_amalgamated.cpp)
 
 foreach (test ${TESTS})
   add_executable(${test} ${PROJECT_SOURCE_DIR}/test/${test}.cpp)
