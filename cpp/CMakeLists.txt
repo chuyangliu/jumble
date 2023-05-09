@@ -9,6 +9,7 @@ set(TESTS
   test_avl_tree
   test_graph
   test_sort
+  test_dijkstra
 )
 
 add_subdirectory(${PROJECT_SOURCE_DIR}/src)
