@@ -26,7 +26,7 @@ include_directories(${PROJECT_SOURCE_DIR}/thirdparty)
 include(CTest)
 
 foreach (test ${TESTS})
-  add_executable(${test} ${PROJECT_SOURCE_DIR}/test/${test}.cpp)
+  add_executable(${test} ${PROJECT_SOURCE_DIR}/tests/${test}.cpp)
   target_link_libraries(${test} jumblecpp catch2)
   add_test(${test} ${PROJECT_BINARY_DIR}/${test})
 endforeach ()

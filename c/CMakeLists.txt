@@ -12,6 +12,6 @@ add_subdirectory(${PROJECT_SOURCE_DIR}/src)
 include_directories(${PROJECT_SOURCE_DIR}/src)
 
 foreach (example ${EXAMPLES})
-  add_executable(${example} ${PROJECT_SOURCE_DIR}/example/${example}.c)
+  add_executable(${example} ${PROJECT_SOURCE_DIR}/examples/${example}.c)
   target_link_libraries(${example} jumblec)
 endforeach ()
