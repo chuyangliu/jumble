@@ -28,7 +28,7 @@ $ cmake ..
 $ cmake --build .
 ```
 
-C++ implementations come with unit tests which can be run with [CTest](https://cmake.org/cmake/help/latests/module/CTest.html):
+C++ implementations come with unit tests which can be run with [CTest](https://cmake.org/cmake/help/latest/module/CTest.html):
 
 ```
 $ ctest
