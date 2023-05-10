@@ -2,6 +2,8 @@
 
 C/C++ implementations of data structures, algorithms, and everything else.
 
+## C++
+
 | Name | Sources | Notes |
 |:----:|:-------:|-------|
 |LinkedList|[test](./cpp/tests/test_doubly_linked_list.cpp) [.hpp](./cpp/src/jumble/doubly_linked_list.hpp)|Doubly linked list and merge sort.|
