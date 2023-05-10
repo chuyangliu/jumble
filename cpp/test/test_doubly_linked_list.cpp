@@ -9,6 +9,7 @@ template<typename T>
 std::string getListContent(const jumble::DoublyLinkedList<T>& list) {
     std::string str;
     list.traverse([&](const SizeType pos, const T& val) {
+        UNUSED(pos);
         str += std::to_string(val);
     });
     return str;

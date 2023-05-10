@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(jumble CXX)
+project(jumblecpp CXX)
 
 set(TESTS
   test_doubly_linked_list
@@ -11,20 +11,22 @@ set(TESTS
   test_sort
   test_dijkstra
   test_md5
+  test_calculator
+  test_npuzzle
 )
+
+add_compile_options(-Wall -Wextra -Wpedantic -Werror)
 
 add_subdirectory(${PROJECT_SOURCE_DIR}/src)
+include_directories(${PROJECT_SOURCE_DIR}/src)
 
-include_directories(
-  ${PROJECT_SOURCE_DIR}/src
-  ${PROJECT_SOURCE_DIR}/thirdparty
-)
+add_subdirectory(${PROJECT_SOURCE_DIR}/thirdparty)
+include_directories(${PROJECT_SOURCE_DIR}/thirdparty)
 
 include(CTest)
-add_library(catch2 ${PROJECT_SOURCE_DIR}/thirdparty/catch2/catch_amalgamated.cpp)
 
 foreach (test ${TESTS})
   add_executable(${test} ${PROJECT_SOURCE_DIR}/test/${test}.cpp)
-  target_link_libraries(${test} catch2)
+  target_link_libraries(${test} jumblecpp catch2)
   add_test(${test} ${PROJECT_BINARY_DIR}/${test})
 endforeach ()

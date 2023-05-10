@@ -1,7 +1,6 @@
 #ifndef JUMBLE_HASH_TABLE_HPP_INCLUDED
 #define JUMBLE_HASH_TABLE_HPP_INCLUDED
 
-#include "jumble/util/common.hpp"
 #include "jumble/doubly_linked_list.hpp"
 #include <vector>
 #include <utility>
@@ -111,6 +110,7 @@ public:
         buckets.resize(bucketNum);
         for (SizeType i = 0; i < oldNum; ++i) {
             oldBuckets[i].traverse([&](const SizeType pos, const Value& val) {
+                UNUSED(pos);
                 insert(val);
             });
         }

@@ -4,4 +4,6 @@
 #define JUMBLE_NAMESPACE_BEGIN namespace jumble {
 #define JUMBLE_NAMESPACE_END   }
 
+#define UNUSED(expr) (void)(expr)
+
 #endif

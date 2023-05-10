@@ -1,17 +1,16 @@
-#ifndef TASTYLIB_NPUZZLE_H_
-#define TASTYLIB_NPUZZLE_H_
+#ifndef JUMBLE_NPUZZLE_HPP_INCLUDED
+#define JUMBLE_NPUZZLE_HPP_INCLUDED
 
-#include "tastylib/internal/base.h"
-#include "tastylib/util/random.h"
-#include "tastylib/HashTable.h"
-#include "tastylib/BinaryHeap.h"
+#include "jumble/hash_table.hpp"
+#include "jumble/binary_heap.hpp"
+#include "jumble/util/random.hpp"
 #include <vector>
 #include <sstream>
 #include <string>
 #include <list>
 #include <utility>
 
-TASTYLIB_NS_BEGIN
+JUMBLE_NAMESPACE_BEGIN
 
 enum Direc {
     NONE,
@@ -427,6 +426,6 @@ private:
     SizeType searchCnt = 0;
 };
 
-TASTYLIB_NS_END
+JUMBLE_NAMESPACE_END
 
 #endif

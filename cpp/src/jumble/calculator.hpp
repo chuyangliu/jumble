@@ -1,13 +1,12 @@
-#ifndef TASTYLIB_CALCULATOR_H_
-#define TASTYLIB_CALCULATOR_H_
+#ifndef JUMBLE_CALCULATOR_HPP_INCLUDED
+#define JUMBLE_CALCULATOR_HPP_INCLUDED
 
-#include "tastylib/internal/base.h"
+#include "jumble/util/common.hpp"
 #include <string>
 #include <iostream>
 #include <vector>
 
-TASTYLIB_NS_BEGIN
-
+JUMBLE_NAMESPACE_BEGIN
 
 class Token {
     friend bool operator==(const Token& lhs, const Token& rhs) noexcept {
@@ -115,7 +114,6 @@ private:
     Parser parser;
 };
 
-
-TASTYLIB_NS_END
+JUMBLE_NAMESPACE_END
 
 #endif

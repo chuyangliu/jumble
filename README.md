@@ -1,6 +1,29 @@
-# TastyLib
+# Jumble
 
-C++ implementations of data structures, algorithms and useful designs.
+C/C++ implementations of data structures, algorithms, and anything else.
+
+## Installation
+
+Go to the target root directory (i.e., [./cpp](./cpp) for C++ and [./c](./c) for C) where the top-level `CMakeLists.txt` is located, and build the project with [CMake](https://cmake.org/):
+
+```
+$ mkdir build
+$ cd build
+$ cmake ..
+$ cmake --build .
+```
+
+C++ implementations come with unit tests which can be run with [CTest](https://cmake.org/cmake/help/latest/module/CTest.html):
+
+```
+$ ctest
+```
+
+C implementations don't have unit tests. Please run each example binary individually:
+
+```
+$ ./example_greeting
+```
 
 ## Outline
 

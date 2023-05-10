@@ -1,10 +1,10 @@
-#include "tastylib/Calculator.h"
+#include "jumble/calculator.hpp"
 #include <stdexcept>
 #include <stack>
 #include <cstddef>
 #include <cctype>
 
-TASTYLIB_NS_BEGIN
+JUMBLE_NAMESPACE_BEGIN
 
 // Lexer
 
@@ -199,7 +199,7 @@ long Calculator::calculate() {
     const auto &toks = parser.parse();  // Postfix tokens
 
     std::stack<std::string> s;
-    for (const auto tok : toks) {
+    for (const auto &tok : toks) {
         if (tok.type() == Token::NUMBER) {
             s.push(tok.val());
         } else if (tok.type() == Token::OPERATOR) {
@@ -241,4 +241,4 @@ long Calculator::calculate() {
     return std::stol(s.top());
 }
 
-TASTYLIB_NS_END
+JUMBLE_NAMESPACE_END
