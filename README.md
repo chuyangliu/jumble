@@ -2,10 +2,10 @@
 
 C/C++ implementations of data structures, algorithms, and anything else.
 
-## C++ Implementations
+## C++
 
 | Name | Sources | Notes |
-|------|---------|-------|
+|:----:|:-------:|-------|
 |DoublyLinkedList|[tests](./cpp/test/test_doubly_linked_list.cpp) [.hpp](./cpp/src/jumble/doubly_linked_list.hpp)|Doubly linked list and merge sort.|
 |BinaryHeap|[tests](./cpp/test/test_binary_heap.cpp) [.hpp](./cpp/src/jumble/binary_heap.hpp)|Heap implemented with complete binary tree.|
 |HashTable|[tests](./cpp/test/test_hash_table.cpp) [.hpp](./cpp/src/jumble/hash_table.hpp)|Hash table with conflicting entries appended to linked list.|
@@ -15,11 +15,11 @@ C/C++ implementations of data structures, algorithms, and anything else.
 |Dijkstra|[tests](./cpp/test/test_dijkstra.cpp) [.hpp](./cpp/src/jumble/dijkstra.hpp)|Algorithm to find shortest path between nodes in a graph.|
 |MD5|[tests](./cpp/test/test_md5.cpp) [.hpp](./cpp/src/jumble/md5.hpp)|MD5 hash function.|
 |Calculator|[tests](./cpp/test/test_calculator.cpp) [.hpp](./cpp/src/jumble/calculator.hpp) [.cpp](./cpp/src/jumble/calculator.cpp)|Infix arithmetic expression calculator based on [recursive descent parser](https://en.wikipedia.org/wiki/Recursive_descent_parser).|
-|NPuzzle|[tests](./cpp/test/test_npuzzle.cpp) [.hpp](./cpp/src/jumble/npuzzle.hpp)|A* search to solve [N-Puzzle problem](https://en.wikipedia.org/wiki/15_puzzle).|
+|NPuzzle|[tests](./cpp/test/test_npuzzle.cpp) [.hpp](./cpp/src/jumble/npuzzle.hpp)|A* search to solve [N-Puzzle](https://en.wikipedia.org/wiki/15_puzzle) problem.|
 
 ## Installation
 
-Go to the target root directory (i.e., [./cpp](./cpp) for C++ and [./c](./c) for C) where the top-level `CMakeLists.txt` is located, and build the project with [CMake](https://cmake.org/):
+Go to target directory ([./cpp](./cpp) for C++, [./c](./c) for C) and build with [CMake](https://cmake.org/):
 
 ```
 $ mkdir build
