@@ -11,8 +11,8 @@ set(TESTS
   test_sort
   test_dijkstra
   test_md5
-  test_calculator
   test_npuzzle
+  test_calculator
 )
 
 add_subdirectory(${PROJECT_SOURCE_DIR}/src)

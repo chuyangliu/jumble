@@ -12,8 +12,8 @@ C/C++ implementations of data structures, algorithms, and everything else.
 |Sorting|[test](./cpp/tests/test_sort.cpp) [.hpp](./cpp/src/jumble/sort.hpp)|Common sorting algorithms.|
 |Dijkstra|[test](./cpp/tests/test_dijkstra.cpp) [.hpp](./cpp/src/jumble/dijkstra.hpp)|Algorithm to find shortest path between nodes in a graph.|
 |MD5|[test](./cpp/tests/test_md5.cpp) [.hpp](./cpp/src/jumble/md5.hpp)|MD5 hash function.|
-|Calculator|[test](./cpp/tests/test_calculator.cpp) [.hpp](./cpp/src/jumble/calculator.hpp) [.cpp](./cpp/src/jumble/calculator.cpp)|Infix arithmetic expression calculator based on [recursive descent parser](https://en.wikipedia.org/wiki/Recursive_descent_parser).|
 |N-Puzzle|[test](./cpp/tests/test_npuzzle.cpp) [.hpp](./cpp/src/jumble/npuzzle.hpp)|A* search to solve the [N-Puzzle](https://en.wikipedia.org/wiki/15_puzzle) problem.|
+|Calculator|[test](./cpp/tests/test_calculator.cpp) [.hpp](./cpp/src/jumble/calculator.hpp) [.cpp](./cpp/src/jumble/calculator.cpp)|Infix arithmetic expression calculator based on [recursive descent parser](https://en.wikipedia.org/wiki/Recursive_descent_parser).|
 
 ## Installation
 
