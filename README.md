@@ -29,15 +29,13 @@ cmake --build .
 C++ builds will be located at `build/cpp`. C++ implementations come with unit tests which can be run with [CTest](https://cmake.org/cmake/help/latest/module/CTest.html):
 
 ```
-cd cpp
-ctest
+ctest --test-dir cpp
 ```
 
 C builds will be located at `build/c`. C implementations don't have unit tests. Please run each binary individually:
 
 ```
-cd c
-./example_greeting
+./c/example_greeting
 ```
 
 ## License
