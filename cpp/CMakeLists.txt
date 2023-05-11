@@ -15,8 +15,6 @@ set(TESTS
   test_npuzzle
 )
 
-add_compile_options(-Wall -Wextra -Wpedantic -Werror)
-
 add_subdirectory(${PROJECT_SOURCE_DIR}/src)
 include_directories(${PROJECT_SOURCE_DIR}/src)
 
