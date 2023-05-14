@@ -6,6 +6,9 @@ set(EXAMPLES
   example_greeting
 )
 
+set(CMAKE_C_STANDARD 99)
+set(CMAKE_C_STANDARD_REQUIRED ON)
+
 add_subdirectory(${PROJECT_SOURCE_DIR}/src)
 include_directories(${PROJECT_SOURCE_DIR}/src)
 
