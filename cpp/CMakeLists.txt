@@ -8,6 +8,7 @@ set(TESTS
   test_hash_table
   test_avl_tree
   test_graph
+  test_shared_ptr
   test_sort
   test_dijkstra
   test_md5
