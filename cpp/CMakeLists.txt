@@ -3,16 +3,17 @@ cmake_minimum_required(VERSION 3.10)
 project(jumblecpp CXX)
 
 set(TESTS
+  test_shared_ptr
+  test_unique_ptr
   test_doubly_linked_list
   test_binary_heap
   test_hash_table
   test_avl_tree
   test_graph
-  test_shared_ptr
   test_sort
+  test_npuzzle
   test_dijkstra
   test_md5
-  test_npuzzle
   test_calculator
 )
 
