@@ -9,6 +9,7 @@ C/C++ implementations of data structures, algorithms, and everything else.
 |Hash Table|[test](./cpp/tests/test_hash_table.cpp) [.hpp](./cpp/src/jumble/hash_table.hpp)|Hash table with conflicting entries appended to linked list.|
 |AVL Tree|[test](./cpp/tests/test_avl_tree.cpp) [.hpp](./cpp/src/jumble/avl_tree.hpp)|Self-balancing binary search tree.|
 |Graph|[test](./cpp/tests/test_graph.cpp) [.hpp](./cpp/src/jumble/graph.hpp)|Graph implemented with adjacency list and matrix.|
+|SharedPtr|[test](./cpp/tests/test_shared_ptr.cpp) [.hpp](./cpp/src/jumble/shared_ptr.hpp)|My own version of [std::shared_ptr](https://en.cppreference.com/w/cpp/memory/shared_ptr).|
 |Sorting|[test](./cpp/tests/test_sort.cpp) [.hpp](./cpp/src/jumble/sort.hpp)|Common sorting algorithms.|
 |Dijkstra|[test](./cpp/tests/test_dijkstra.cpp) [.hpp](./cpp/src/jumble/dijkstra.hpp)|Algorithm to find shortest path between nodes in a graph.|
 |MD5|[test](./cpp/tests/test_md5.cpp) [.hpp](./cpp/src/jumble/md5.hpp)|MD5 hash function.|
