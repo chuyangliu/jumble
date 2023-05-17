@@ -1,4 +1,4 @@
-#include "jumble/epollsvr.h"
+#include "jumble/websvr.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -16,7 +16,7 @@ static int listen_socket(unsigned short port);
 static void handle(int listen_sock);
 static int client_socket(int listen_sock);
 
-void epollsvr_start(unsigned short port) {
+void websvr_serve(unsigned short port) {
     int listen_sock = listen_socket(port);
 
     while (1) {

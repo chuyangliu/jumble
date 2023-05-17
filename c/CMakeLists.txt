@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.10)
 project(jumblec C)
 
 set(EXAMPLES
-  example_epollsvr
+  example_websvr
   example_greeting
 )
 

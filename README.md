@@ -4,7 +4,6 @@ C/C++ implementations of data structures, algorithms, and everything else.
 
 | Name | Language | Sources | Notes |
 |:----:|:--------:|:-------:|-------|
-|Greeting|C|[example](./c/examples/example_greeting.c) [.h](./c/src/jumble/greeting.h) [.c](./c/src/jumble/greeting.c)|Funny [ASCII art](https://en.wikipedia.org/wiki/ASCII_art) for a greeting.|
 |SharedPtr|C++|[test](./cpp/tests/test_shared_ptr.cpp) [.hpp](./cpp/src/jumble/shared_ptr.hpp)|My own version of [std::shared_ptr](https://en.cppreference.com/w/cpp/memory/shared_ptr).|
 |UniquePtr|C++|[test](./cpp/tests/test_unique_ptr.cpp) [.hpp](./cpp/src/jumble/unique_ptr.hpp)|My own version of [std::unique_ptr](https://en.cppreference.com/w/cpp/memory/unique_ptr).|
 |Linked List|C++|[test](./cpp/tests/test_doubly_linked_list.cpp) [.hpp](./cpp/src/jumble/doubly_linked_list.hpp)|Doubly linked list and merge sort.|
@@ -17,6 +16,8 @@ C/C++ implementations of data structures, algorithms, and everything else.
 |Dijkstra|C++|[test](./cpp/tests/test_dijkstra.cpp) [.hpp](./cpp/src/jumble/dijkstra.hpp)|Algorithm to find shortest path between nodes in a graph.|
 |MD5|C++|[test](./cpp/tests/test_md5.cpp) [.hpp](./cpp/src/jumble/md5.hpp)|MD5 hash function.|
 |Calculator|C++|[test](./cpp/tests/test_calculator.cpp) [.hpp](./cpp/src/jumble/calculator.hpp) [.cpp](./cpp/src/jumble/calculator.cpp)|Infix arithmetic expression calculator based on [recursive descent parser](https://en.wikipedia.org/wiki/Recursive_descent_parser).|
+|Web Server|C|[example](./c/examples/example_websvr.c) [.h](./c/src/jumble/websvr.h) [.c](./c/src/jumble/websvr.c)|Single-threaded web server.|
+|Greeting|C|[example](./c/examples/example_greeting.c) [.h](./c/src/jumble/greeting.h) [.c](./c/src/jumble/greeting.c)|Funny [ASCII art](https://en.wikipedia.org/wiki/ASCII_art) for a greeting.|
 
 ## Installation
 
@@ -38,7 +39,7 @@ ctest --test-dir cpp
 C builds will be located at `build/c`. C implementations don't have unit tests. Please run each binary individually:
 
 ```
-./c/example_greeting
+./c/example_websvr
 ```
 
 ## License
